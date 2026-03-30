@@ -63,7 +63,7 @@ h1 {
 .search-container button {
   padding:12px;
   border: 1px solid #ccc;
-  border-radius: 20px;
+  border-radius: 8px;
   font-size: 16px;
   color: #333;
   background-color: #068d9f;
@@ -101,7 +101,7 @@ h1 {
 }
 
 .previous-searches-list li {
-  padding: 5px 10px;
+  padding: 10px 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
   cursor: pointer;

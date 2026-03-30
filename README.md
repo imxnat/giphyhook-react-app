@@ -1,3 +1,14 @@
+# giphyhook-react-app Development specs:
+- Implement React hook useState for managening the state of components
+- Implement React hook useEffect when fetching the data from the API
+- Custom Hooks
+- Fetch data using Axios.
+- Use of the Giphy Api as the source of data.
+- Enviroment variables to protect our keys.
+- Use of Typescript Interfaces in order to define the type structured for the API response, objects and data in general.
+- Google fonts to get the font family.
+
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
@@ -71,4 +82,5 @@ export default defineConfig([
   },
 ])
 ```
-# giphyhook-react-app
+
+
