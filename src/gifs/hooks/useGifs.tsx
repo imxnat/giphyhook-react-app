@@ -1,8 +1,10 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { getGifsByQuery } from "../actions/get-gifs-by-query.action";
 import type { Gif } from "../interfaces/gif.interface";
 
 const useGifs = () => {
+
+	const gifCache = useRef();
 
 	// state que maneja el fetch de la data by query
 	const [gifs, setGifs] = useState<Gif[]>([]);
@@ -32,12 +34,15 @@ const useGifs = () => {
 
 
 	const handlePreviousSearchClicked = (term: string) => {
-		console.log({ term });
+		if (gifCache.current) {
+
+		}
+
 	};
 
 	return (
 		{
-			//values
+			//values or Props
 			gifs,
 			previousSearchTerm,
 
