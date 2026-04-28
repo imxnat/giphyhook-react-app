@@ -3,12 +3,13 @@ import PreviousSearches from "./gifs/components/PreviousSearches";
 import CustomHeader from "./shared/components/CustomHeader";
 import SearchBar from "./shared/components/SearchBar";
 import { mockGifs } from "./mock-data/gifs.mock";
-import useGifs from "./gifs/hooks/useGifs";
+import { useGifSearch } from "./gifs/hooks/useGifSearch";
 
 
 const GifApp = () => {
 
-	const { handleSearch, handlePreviousSearchClicked, gifs, previousSearchTerm } = useGifs();
+
+	const { handleSearch, gifs, history, handlePreviousSearchClicked } = useGifSearch();
 
 	return (
 		<>
@@ -25,7 +26,8 @@ const GifApp = () => {
 
 			{/* busqueda previa */}
 			<PreviousSearches
-				previousSearch={previousSearchTerm}
+				// previousSearch={previousSearchTerm}
+				previousSearch={history}
 				handlePreviousSearchClicked={handlePreviousSearchClicked} />
 
 			{/* show search Gifs */}
